@@ -274,6 +274,8 @@ body {
   color: var(--primary-background-color);
   background: var(--tap-link-color);
   border-color: var(--tap-link-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
@@ -282,13 +284,17 @@ body {
   color: var(--tap-link-color);
   background-color: var(--trd-background-color);
   border: 1px solid #e7e9fc;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .decoration {
   text-decoration: none;
   max-width: 100%;
 }
+.decoration:hover,
+.decoration:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -302,11 +308,11 @@ body {
   margin-bottom: 48px;
 }
 
-.projects-list .item:hover,
+/* .projects-list .item:hover,
 .projects-list .item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 
 .projects-card-content {
   padding-left: 16px;
@@ -314,6 +320,12 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   border: 1px solid #e7e9fc;
+}
+
+.projects-card-content:hover,
+.projects-card-content:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .title h2 {
@@ -370,7 +382,6 @@ body {
 
 .features-list li {
   width: calc((100% - (3 * 24px) / 4));
-  /* width: 264px; */
   margin-right: 24px;
 }
 .features-list li:last-child {
@@ -378,7 +389,7 @@ body {
 }
 
 .features-title {
-  margin-top: 0;
+  margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -446,6 +457,8 @@ body {
 
 .social-networks-list {
   display: flex;
+  padding-top: 8px;
+  padding-bottom: 0;
 }
 
 .social-link {
@@ -455,6 +468,12 @@ body {
   width: 40px;
   height: 40px;
   background-color: var(--primary-btn-color);
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--tap-link-color);
   border-radius: 50%;
 }
 
@@ -485,11 +504,20 @@ body {
   gap: 24px;
 }
 
+.customers-list .item:hover,
+.customers-list .item:focus {
+}
 .customers-icon {
   width: 104px;
   height: 56px;
   fill: #8e8f99;
 }
+
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: currentColor;
+}
+
 /* Footer */
 
 .footer {
