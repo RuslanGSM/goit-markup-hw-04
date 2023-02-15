@@ -170,7 +170,23 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
-  background-color: var(--secondary-background-color);
+  /* background-color: var(--secondary-background-color); */
+  background-image: url(../css/images/Dark-bg-min.jpg);
+}
+
+.overlay {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../css/images/people-office\ 1-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -305,7 +321,7 @@ body {
   color: var(--title-color);
 }
 
-/* Section 2 */
+/* Section 1 */
 
 .features-section {
   padding-top: 120px;
@@ -326,6 +342,20 @@ body {
 .features-list {
   margin-top: 0;
   display: flex;
+}
+
+.features-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--trd-background-color);
+}
+
+.features-icon {
+  width: 64px;
+  height: 64px;
 }
 
 .features-list li {
@@ -353,7 +383,7 @@ body {
   margin-bottom: 0;
 }
 
-/* Section 3 */
+/* Section 2 */
 .works-section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -363,7 +393,7 @@ body {
   gap: 24px;
 }
 
-/* Section 4 */
+/* Section 3 */
 .team-section {
   background: var(--trd-background-color);
   padding-top: 120px;
@@ -379,7 +409,6 @@ body {
   background: var(--primary-background-color);
 }
 
-
 .team-list {
   display: flex;
   max-width: 100%;
@@ -388,7 +417,7 @@ body {
   width: calc((100% - (3 * 24px) / 4));
   /* width: 264px; */
   margin-right: 24px;
-  }
+}
 .team-list li:last-child {
   margin-right: 0;
 }
@@ -403,6 +432,57 @@ body {
   color: var(--title-color);
 }
 
+/* Socials */
+
+.social-networks-list {
+  display: flex;
+}
+
+.social-item {
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-btn-color);
+  border-radius: 50%;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--primary-background-color);
+}
+
+/* Section 4 */
+
+.customers-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+}
+
+.customers-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-icon {
+  width: 104px;
+  height: 56px;
+  fill: #8e8f99;
+}
 /* Footer */
 
 .footer {
