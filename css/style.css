@@ -525,6 +525,12 @@ body {
   padding-bottom: 100px;
   background-color: var(--secondary-background-color);
 }
+
+.reception-list {
+  display: flex;
+  gap: 120px;
+}
+
 .footer-title {
   max-width: 264px;
 }
@@ -566,16 +572,24 @@ body {
   max-width: 280px;
   height: 80px;
 } */
+
+.social-media {
+  max-width: 280px;
+  height: 80px;
+}
 .social-title {
+  margin-top: 0;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-background-color);
 }
 
 .studio-networks-list {
   display: flex;
+  gap: 16px;
 }
 
 .studio-link {
@@ -588,8 +602,14 @@ body {
   border-radius: 50%;
 }
 
+.studio-link:hover,
+.studio-link:focus{
+  background-color: #31D0AA;
+  border-radius: 50%;
+}
+
 .studio-icon {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   fill: var(--primary-background-color);
 }
