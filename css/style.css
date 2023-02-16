@@ -397,6 +397,7 @@ body {
 }
 
 /* Section 2 */
+
 .works-section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -407,6 +408,7 @@ body {
 }
 
 /* Section 3 */
+
 .team-section {
   background: var(--trd-background-color);
   padding-top: 120px;
@@ -560,10 +562,6 @@ body {
   color: #e7e9fc;
 }
 
-/* .studio-social{
-  max-width: 280px;
-  height: 80px;
-} */
 
 .social-media {
   max-width: 280px;
