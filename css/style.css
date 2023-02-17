@@ -60,13 +60,13 @@ body {
 /* Top line */
 
 .page-header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -422,6 +422,9 @@ body {
   padding-bottom: 32px;
   padding-left: 16px;
   background: var(--primary-background-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list {
@@ -450,8 +453,8 @@ body {
 
 .social-networks-list {
   display: flex;
-  padding-top: 8px;
-  padding-bottom: 0;
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 
 .social-link {
@@ -479,19 +482,8 @@ body {
 /* Section 4 */
 
 .customers-list .item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 168px;
+  width: calc(100% - 120px / 6);
   height: 88px;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-}
-
-.customers-list .item:hover,
-.customers-list .item:focus {
-  border-radius: 4px;
-  border: 1px solid var(--primary-btn-color);
 }
 
 .customers-section {
@@ -500,16 +492,28 @@ body {
 }
 .customers-list {
   display: flex;
+  align-items: center;
+  width: calc(100% - 120px / 6);
+  height: 88px;
   gap: 24px;
 }
-.customers-icon {
-  width: 104px;
-  height: 56px;
+
+.customers-link {
+  display: inline-block;
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   color: #8e8f99;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
-.customers-icon:hover,
-.customers-icon:focus {
+
+.customers-link:hover,
+.customers-link:focus {
   color: var(--primary-btn-color);
+  border: 1px solid var(--primary-btn-color);
 }
 
 /* Footer */
