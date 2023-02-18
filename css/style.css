@@ -125,8 +125,8 @@ body {
 
 .site-nav :active {
   color: var(--tap-link-color);
-  text-decoration: underline;
-}
+  }
+  
 .site-nav .link.current {
   color: var(--primary-btn-color);
 }
@@ -213,6 +213,8 @@ body {
   color: var(--primary-background-color);
   background-color: var(--primary-btn-color);
   border-color: var(--primary-btn-color);
+  outline: none;
+  border: none;
 }
 
 .button:hover,
@@ -470,8 +472,7 @@ body {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--tap-link-color);
-  border-radius: 50%;
-}
+  }
 
 .social-icon {
   width: 16px;
